@@ -2,6 +2,7 @@ import AnimatedContent from "@/components/animated-content";
 import SectionTitle from "@/components/section-title";
 import { projects } from "@/data/projects";
 import { FolderKanbanIcon, ArrowUpRightIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function ProjectsSection() {
     return (
@@ -19,13 +20,15 @@ export default function ProjectsSection() {
                             delay={index * 0.08}
                             className="rounded-2xl border border-gray-200 bg-white shadow-[0_8px_24px_rgba(0,0,0,0.06)] overflow-hidden"
                         >
-                            <div className="relative w-full aspect-[808/632]">
-                                <img
+                            <div className="relative w-full aspect-808/632">
+                                <Image
                                     src={project.thumbnail}
                                     alt={`${project.title} thumbnail`}
                                     className="h-full w-full object-cover"
+                                    fill
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/35 to-transparent" />
                                 <span className="absolute left-4 bottom-4 text-xs font-medium uppercase tracking-wide text-white">
                                     {project.category}
                                 </span>

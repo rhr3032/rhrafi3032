@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedContent from "@/components/animated-content";
 import SectionTitle from "@/components/section-title";
 import { UserRoundIcon } from "lucide-react";
@@ -44,10 +45,12 @@ export default function AboutSection() {
                     </div>
                     <AnimatedContent className="relative">
                         <div className="absolute -top-6 -left-6 h-28 w-28 rounded-full bg-orange-100 blur-2xl" />
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop"
                             alt="Rafi Rahman portrait"
-                            className="relative z-10 w-full h-[420px] object-cover rounded-2xl border border-gray-200"
+                            width={900}
+                            height={420}
+                            className="relative z-10 w-full h-105 object-cover rounded-2xl border border-gray-200"
                         />
                     </AnimatedContent>
                 </div>
