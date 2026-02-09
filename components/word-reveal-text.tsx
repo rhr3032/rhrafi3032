@@ -31,7 +31,7 @@ export default function WordRevealText({
 
         return parts;
     }, [text]);
-    const motionMap = motion as Record<string, React.ElementType>;
+    const motionMap = motion as unknown as Record<string, React.ElementType>;
     const MotionTag = motionMap[as] ?? motion.span;
 
     return (
