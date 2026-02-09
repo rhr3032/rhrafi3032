@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Sora', sans-serif;
+    --font-urbanist: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-sm text-gray-800 antialiased font-sans;
+    }
+}
+
+@keyframes hero-sparkle-reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.95) rotate(-6deg);
+        filter: blur(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+        filter: blur(0px);
+    }
+}
+
+@keyframes hero-sparkle-float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(3deg);
+    }
+}
+
+.hero-sparkle {
+    animation: hero-sparkle-reveal 0.7s ease-out 0.2s both, hero-sparkle-float 4s ease-in-out 0.7s infinite;
+    will-change: transform, filter, opacity;
+}
+
+.nav-bar {
+    backdrop-filter: blur(60px) saturate(160%);
+    -webkit-backdrop-filter: blur(60px) saturate(160%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35));
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+@keyframes scroll-indicator-wheel {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.scroll-indicator {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(30, 41, 57, 0.35);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.scroll-indicator__wheel {
+    width: 4px;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(30, 41, 57, 0.55);
+    animation: scroll-indicator-wheel 1.6s ease-in-out infinite;
+}
