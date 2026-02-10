@@ -36,8 +36,8 @@ export default function Navbar() {
                             <MenuIcon className="size-6" />
                         </button>
 
-                        <Link href="#contact" className="hidden md:inline-flex items-center py-1.5 px-4 rounded-full bg-linear-to-tl from-orange-600 to-orange-500 text-white text-sm font-medium">
-                            Hire me
+                        <Link href="mailto:contact.raisulrafi@gmail.com" className="hidden md:inline-flex items-center py-1.5 px-4 rounded-full bg-linear-to-tl from-orange-600 to-orange-500 text-white text-sm font-medium">
+                            Hire Me
                         </Link>
                     </div>
                 </div>
@@ -53,8 +53,8 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href="#contact" className="py-2.5 px-6 w-max text-sm shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)] bg-linear-to-tl from-orange-600 to-orange-500 text-white rounded-full">
-                        Hire me
+                    <Link href="mailto:contact.raisulrafi@gmail.com" className="py-2.5 px-6 w-max text-sm shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)] bg-linear-to-tl from-orange-600 to-orange-500 text-white rounded-full">
+                        Hire Me
                     </Link>
                 </div>
             </div>

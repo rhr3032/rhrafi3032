@@ -24,7 +24,7 @@ export default function EducationSection() {
                                     <h3 className="text-lg font-semibold">{item.program}</h3>
                                     <p className="text-sm text-zinc-500">{item.school}</p>
                                 </div>
-                                <span className="text-xs text-zinc-500 uppercase tracking-wide">{item.period}</span>
+                                <span className="text-xs text-zinc-500 tracking-wide whitespace-nowrap">{item.period}</span>
                             </div>
                             <div className="mt-4 space-y-2">
                                 {item.details.map((detail) => (

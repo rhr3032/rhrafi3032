@@ -2,9 +2,9 @@ import { IExperienceItem } from "@/types";
 
 export const experience: IExperienceItem[] = [
     {
-        role: "Senior UI/UX Designer",
-        company: "NovaHealth",
-        period: "2023 — Present",
+        role: "Lead UI/UX Designer",
+        company: "MNTech Digital",
+        period: "Feb, 2025 — Present",
         summary: "Leading product UX for a patient engagement platform across web and mobile.",
         highlights: [
             "Redesigned onboarding flow, reducing drop-off by 28%",
@@ -14,8 +14,8 @@ export const experience: IExperienceItem[] = [
     },
     {
         role: "Product Designer",
-        company: "Orbitly",
-        period: "2021 — 2023",
+        company: "Ramotion Inc. (Remote)",
+        period: "2023 — 2024",
         summary: "Owned core SaaS workflows, billing UX and analytics dashboards.",
         highlights: [
             "Shipped pricing experiments that improved trial-to-paid",
@@ -25,13 +25,13 @@ export const experience: IExperienceItem[] = [
     },
     {
         role: "UI/UX Designer",
-        company: "Brightline Studio",
-        period: "2020 — 2021",
-        summary: "Delivered client websites and product MVPs for early-stage startups.",
+        company: "Fiverr & Upwork (Freelance)",
+        period: "2021 — 2024",
+        summary: "Partnered with US and UK–based clients to design scalable, user-centric websites and MVP products for early-stage startups.",
         highlights: [
-            "Designed 12+ marketing sites and landing experiences",
-            "Supported dev handoff and QA for responsive builds",
-            "Produced motion assets for product launch campaigns",
+            "Designed 120+ conversion-driven websites and landing pages for US/UK clients",
+            "Supported end-to-end design handoff, QA, and responsive builds",
+            "Created motion assets to enhance product launches and marketing campaigns",
         ],
     },
 ];

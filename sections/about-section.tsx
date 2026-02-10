@@ -20,7 +20,7 @@ export default function AboutSection() {
                             dir="left"
                             icon={UserRoundIcon}
                             title="About me"
-                            subtitle="I design human-centered products that balance clarity, brand personality and measurable results."
+                            subtitle="Hello, I'm Raisul Rafi 👋"
                         />
                         <AnimatedContent className="mt-8 space-y-4 text-zinc-500 text-base/7">
                             <p>
@@ -46,8 +46,8 @@ export default function AboutSection() {
                     <AnimatedContent className="relative">
                         <div className="absolute -top-6 -left-6 h-28 w-28 rounded-full bg-orange-100 blur-2xl" />
                         <Image
-                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop"
-                            alt="Rafi Rahman portrait"
+                            src="/profile.jpg"
+                            alt="Raisul Hasan Rafi"
                             width={900}
                             height={420}
                             className="relative z-10 w-full h-105 object-cover rounded-2xl border border-gray-200"

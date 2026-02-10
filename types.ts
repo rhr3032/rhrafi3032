@@ -30,12 +30,6 @@ export interface IFaq {
     answer: string;
 };
 
-export interface ITeamMember {
-    name: string;
-    image: string;
-    role: string;
-};
-
 export interface IPricingPlan {
     icon: LucideIcon;
     name: string;

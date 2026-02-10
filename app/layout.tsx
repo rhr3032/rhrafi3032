@@ -17,11 +17,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
     title: {
-        default: "Rafi Rahman – UI/UX Designer",
-        template: "%s | Rafi Rahman",
+        default: "Raisul Rafi – UI/UX Designer",
+        template: "%s | Raisul Rafi",
     },
     description:
-        "Rafi Rahman is a UI/UX designer with 4+ years of experience crafting research-led, accessible digital products.",
+        "Raisul Rafi is a UI/UX designer with 4+ years of experience crafting research-led, accessible digital products.",
     keywords: [
         "ui ux designer",
         "product designer",
@@ -30,26 +30,52 @@ export const metadata: Metadata = {
         "interaction design",
         "mobile app design",
         "portfolio",
+        "raisul hasan rafi",
+        "ui ux designer",
+        "product designer",
+        "design systems",
+        "ux research",
+        "interaction design",
+        "mobile app design",
+        "portfolio",
+        "raisul rafi",
+        "ui designer",
+        "ux designer",
+        "user interface designer",
+        "user experience designer",
+        "digital product designer",
+        "web designer",
+        "app designer",
+        "freelance designer",
+        "remote designer",
+        "rhr3032",
+        "rhrafi3032",
+        "nuysdev",
+        "nuysdzin"
+        
     ],
-    authors: [{ name: "Rafi Rahman" }],
-    creator: "Rafi Rahman",
-    applicationName: "Rafi Rahman Portfolio",
+    authors: [{ name: "Raisul Rafi" }],
+    creator: "Raisul Rafi",
+    applicationName: "Raisul Rafi Portfolio",
     appleWebApp: {
-        title: "Rafi Rahman",
+        title: "Raisul Rafi",
         capable: true,
         statusBarStyle: "default",
     },
     openGraph: {
-        title: "Rafi Rahman – UI/UX Designer",
+        title: "Raisul Rafi – UI/UX Designer",
         description:
             "Research-led UX, accessible interfaces and scalable design systems for web and mobile products.",
         type: "website",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Rafi Rahman – UI/UX Designer",
+        title: "Raisul Rafi – UI/UX Designer",
         description:
             "Research-led UX, accessible interfaces and scalable design systems for web and mobile products.",
+    },
+    icons: {
+        icon: "/fabicon.ico",
     },
 };
 export default function RootLayout({

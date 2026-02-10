@@ -2,21 +2,19 @@ import { IEducationItem } from "@/types";
 
 export const education: IEducationItem[] = [
     {
-        program: "BSc in Interaction Design",
-        school: "University of Creative Arts",
-        period: "2016 — 2020",
+        program: "BA (Hon's) in Department of English Language and Literature",
+        school: "Patuakhali Govt. University College",
+        period: "Session 2021-2022",
         details: [
-            "Graduated with honors, Human-Centered Design track",
-            "Capstone: mobile health coaching UX",
+            "Major Subjects: Literature and Linguistics",
         ],
     },
     {
         program: "Google UX Design Certificate",
         school: "Coursera",
-        period: "2021",
+        period: "2022",
         details: [
-            "Accessibility-first design and usability testing",
-            "High-fidelity prototyping and UX research",
+            "Accessibility-first design, UX research, usability testing, and design sprints, with a focus on user-centered design principles.",
         ],
     },
     {
@@ -24,17 +22,15 @@ export const education: IEducationItem[] = [
         school: "IDEO U",
         period: "2022",
         details: [
-            "Outcome-driven product framing and roadmap alignment",
-            "Cross-functional facilitation and stakeholder workshops",
+            "Outcome-driven product framing, Cross-functional facilitation and roadmap alignment, and Strategic decision-making frameworks.",
         ],
     },
     {
-        program: "UI Motion Design Essentials",
-        school: "School of Motion",
+        program: "UX Principles and Micro-Interactions",
+        school: "Udemy",
         period: "2023",
         details: [
-            "Micro-interactions and interface animation principles",
-            "Lottie pipelines for product teams",
+            "UX principles and micro-interactions with a focus on creating engaging and intuitive user experiences.",
         ],
     },
 ];
