@@ -42,14 +42,14 @@ I craft user experiences.`}
                     className="text-center text-sm/6 sm:text-base/7 text-zinc-500 max-w-2xl mt-3 md:mt-4"
                 />
                 <BlurReveal delay={0.1} className="flex flex-col md:flex-row items-center gap-3 md:gap-4 mt-5 md:mt-6 w-full md:w-auto">
-                    <Link
-                        href="/public/resume.pdf"
+                    <a
+                        href="/resume.pdf"
                         download
                         className="py-2 md:py-2.5 w-full md:w-auto px-5 md:px-8 border border-orange-200 bg-linear-to-tl from-orange-600 to-orange-500 text-white text-center rounded-full inline-flex items-center justify-center gap-2 text-sm"
                     >
                         <DownloadIcon className="size-4" />
                         Download resume
-                    </Link>
+                    </a>
                     <Link href="https://www.behance.net/rhr3032" target="_blank" className="relative py-2 md:py-2.5 w-full md:w-auto px-5 md:px-8 bg-white/50 text-gray-600 font-medium text-center border border-white rounded-full text-sm">
                         View case studies
                         <AnimatedContent direction="horizontal" className="absolute size-8 pointer-events-none right-0 top-full -translate-y-1/2">
