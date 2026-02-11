@@ -19,7 +19,7 @@ export default function Navbar() {
                 href: link.href,
                 el: document.querySelector(link.href),
             }))
-            .filter((target): target is { href: string; el: Element } => Boolean(target.el));
+            .filter((target): target is { href: string; el: HTMLElement } => Boolean(target.el));
 
         if (!targets.length) {
             return;
@@ -32,8 +32,8 @@ export default function Navbar() {
             let currentHref = "/";
 
             for (const target of targets) {
-                const top = (target.el as HTMLElement).offsetTop;
-                const bottom = top + (target.el as HTMLElement).offsetHeight;
+                const top = target.el.offsetTop;
+                const bottom = top + target.el.offsetHeight;
 
                 if (scrollPosition >= top && scrollPosition < bottom) {
                     currentHref = target.href;
