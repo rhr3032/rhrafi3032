@@ -1,9 +1,19 @@
+"use client";
+
 import AnimatedContent from "@/components/animated-content";
 import SectionTitle from "@/components/section-title";
 import { faqs } from "@/data/faqs";
 import { ChevronDownIcon, CircleQuestionMarkIcon } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 
 export default function FaqSection() {
+    const [openIndex, setOpenIndex] = useState(0);
+
+    const handleToggle = (index: number) => {
+        setOpenIndex((current) => (current === index ? -1 : index));
+    };
+
     return (
         <section id="faq" className="border-y border-gray-200">
             <div className="px-4 md:px-16 lg:px-24 xl:px-32">
@@ -20,29 +30,60 @@ export default function FaqSection() {
                     <div className="p-4 pt-20 md:p-20 space-y-6">
                         {faqs.map((faq, index) => (
                             <AnimatedContent key={index}>
-                                <details key={index} className="group bg-gray-50 border border-gray-200 rounded-xl" open={index === 0}>
-                                    <summary className="flex items-center justify-between p-6 select-none">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                                    <button
+                                        type="button"
+                                        aria-expanded={openIndex === index}
+                                        className="flex items-center justify-between p-6 w-full text-left select-none"
+                                        onClick={() => handleToggle(index)}
+                                    >
                                         <h3 className="font-medium text-base">{faq.question}</h3>
-                                        <ChevronDownIcon size={20} className="group-open:rotate-180" />
-                                    </summary>
-                                    <p className="text-sm/6 text-zinc-500 max-w-md p-6 pt-0">
-                                        {faq.answer}
-                                    </p>
-                                </details>
+                                        <motion.span
+                                            animate={{ rotate: openIndex === index ? 180 : 0 }}
+                                            transition={{ duration: 0.25, ease: "easeOut" }}
+                                        >
+                                            <ChevronDownIcon size={20} />
+                                        </motion.span>
+                                    </button>
+                                    <AnimatePresence initial={false}>
+                                        {openIndex === index && (
+                                            <motion.div
+                                                key="content"
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: "auto", opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 0.3, ease: "easeOut" }}
+                                                className="overflow-hidden"
+                                            >
+                                                <motion.p
+                                                    initial={{ y: -6, opacity: 0 }}
+                                                    animate={{ y: 0, opacity: 1 }}
+                                                    exit={{ y: -6, opacity: 0 }}
+                                                    transition={{ duration: 0.2, ease: "easeOut" }}
+                                                    className="text-sm/6 text-zinc-500 max-w-md p-6 pt-0"
+                                                >
+                                                    {faq.answer}
+                                                </motion.p>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </div>
                             </AnimatedContent>
                         ))}
                     </div>
                     <div className="p-4 pt-20 md:p-20">
-                        <div className="sticky top-30 flex items-center justify-between gap-5 p-6 bg-violet-500 w-full rounded-xl mt-12">
+                        <div className="sticky top-24 flex items-center justify-between gap-5 p-6 bg-linear-to-tl from-orange-600 to-orange-500 w-full rounded-xl">
                             <h3 className="text-lg text-white text-balance">
                                 Still have questions? Our team can help you get started.
                             </h3>
 
                             <a
-                                href="#!"
+                                href="https://wa.me/8801795408194"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="bg-white w-max shrink-0 hover:bg-gray-100 px-5 py-2 rounded-full"
                             >
-                                Book a call
+                                Book now
                             </a>
                         </div>
                     </div>

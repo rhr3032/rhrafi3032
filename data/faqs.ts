@@ -2,28 +2,28 @@ import { IFaq } from "@/types";
 
 export const faqs: IFaq[] = [
     {
-        question: "What does NUYsDev do?",
+        question: "What does a UI/UX designer handle end to end?",
         answer:
-            "NUYsDev is a full-face software agency delivering product strategy, UI/UX design and development for web, SaaS and mobile apps.",
+            "I shape product strategy, user flows, IA, and UI systems, then hand off design-ready specs and prototypes your team can build with confidence.",
     },
     {
-        question: "What is your typical process?",
+        question: "How do you approach a new product or redesign?",
         answer:
-            "We run discovery, define scope, design flows and interfaces, then build and ship in clear milestones with weekly updates.",
+            "We start with discovery and goals, map critical journeys, prototype fast, and validate with users before polishing the UI and design system.",
     },
     {
-        question: "Can you work with our existing product or team?",
+        question: "Can you work with an existing design system?",
         answer:
-            "Yes. We can join an existing roadmap, audit your product and integrate with your engineering team or tools.",
+            "Yes. I can extend your system, document components, and align UX patterns so the product stays consistent across teams.",
     },
     {
-        question: "How long does a project take?",
+        question: "What is the timeline for UX and UI deliverables?",
         answer:
-            "Most MVPs launch in 4–8 weeks. Timelines vary based on scope, complexity and integrations.",
+            "Most engagements run 3-6 weeks, depending on scope. You get weekly milestones like wireframes, prototypes, and final UI specs.",
     },
     {
-        question: "What technologies do you use?",
+        question: "What do you deliver at the end?",
         answer:
-            "We build with modern stacks like React, Next.js, Node.js, Python, and React Native, tailored to your needs.",
+            "You receive a clickable prototype, final UI screens, component guidelines, and a handoff package with tokens and annotations.",
     },
 ];

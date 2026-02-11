@@ -104,7 +104,7 @@ export default function PricingSection() {
                             {plan.type === 'enterprise' ? (
                                 <a
                                     href="mailto:contact.raisulrafi@gmail.com"
-                                    className="block text-center py-2.5 rounded-full mt-6 text-sm border bg-white text-orange-600 border-white"
+                                    className="relative z-10 block text-center py-2.5 rounded-full mt-6 text-sm border bg-white text-orange-600 border-white cursor-pointer transition hover:-translate-y-0.5"
                                 >
                                     {plan.linkText}
                                 </a>
@@ -112,7 +112,7 @@ export default function PricingSection() {
                                 <button
                                     type="button"
                                     onClick={() => handleOpenModal(plan.name)}
-                                    className="block text-center py-2.5 rounded-full mt-6 text-sm border text-zinc-600 bg-gray-50 border-gray-200"
+                                    className="relative z-10 block text-center py-2.5 rounded-full mt-6 text-sm border text-zinc-600 bg-gray-50 border-gray-200 cursor-pointer transition hover:-translate-y-0.5"
                                 >
                                     {plan.linkText}
                                 </button>

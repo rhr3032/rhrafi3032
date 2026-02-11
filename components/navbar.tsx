@@ -5,10 +5,61 @@ import { MenuIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeHref, setActiveHref] = useState("/");
+
+    const hashLinks = useMemo(() => links.filter((link) => link.href.startsWith("#")), []);
+
+    useEffect(() => {
+        const targets = hashLinks
+            .map((link) => ({
+                href: link.href,
+                el: document.querySelector(link.href),
+            }))
+            .filter((target): target is { href: string; el: Element } => Boolean(target.el));
+
+        if (!targets.length) {
+            return;
+        }
+
+        const navOffset = 140;
+
+        const updateActive = () => {
+            const scrollPosition = window.scrollY + navOffset;
+            let currentHref = "/";
+
+            for (const target of targets) {
+                const top = (target.el as HTMLElement).offsetTop;
+                const bottom = top + (target.el as HTMLElement).offsetHeight;
+
+                if (scrollPosition >= top && scrollPosition < bottom) {
+                    currentHref = target.href;
+                    break;
+                }
+            }
+
+            if (scrollPosition < targets[0].el.offsetTop - 20) {
+                currentHref = "/";
+            }
+
+            setActiveHref(currentHref);
+        };
+
+        const handleScroll = () => updateActive();
+        const handleResize = () => updateActive();
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("resize", handleResize);
+        updateActive();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResize);
+        };
+    }, [hashLinks]);
 
     return (
         <>
@@ -26,7 +77,16 @@ export default function Navbar() {
 
                         <div className="hidden md:flex items-center gap-2">
                             {links.map((link: ILink) => (
-                                <Link key={link.name} href={link.href} className="py-1 px-3 text-sm text-[#1E2939]/80 hover:text-[#1E2939] transition">
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className={`py-1 px-3 text-sm transition ${
+                                        activeHref === link.href
+                                            ? "text-orange-600"
+                                            : "text-[#1E2939]/80 hover:text-[#1E2939]"
+                                    }`}
+                                    onClick={() => setActiveHref(link.href)}
+                                >
                                     {link.name}
                                 </Link>
                             ))}
@@ -49,7 +109,15 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-col gap-4 p-4 text-base">
                     {links.map((link: ILink) => (
-                        <Link key={link.name} href={link.href} className="py-1 px-3" onClick={() => setIsMenuOpen(false)}>
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className={`py-1 px-3 ${activeHref === link.href ? "text-orange-600" : "text-[#1E2939]"}`}
+                            onClick={() => {
+                                setActiveHref(link.href);
+                                setIsMenuOpen(false);
+                            }}
+                        >
                             {link.name}
                         </Link>
                     ))}

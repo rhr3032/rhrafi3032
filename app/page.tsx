@@ -2,6 +2,7 @@ import AboutSection from "@/sections/about-section";
 import ContactSection from "@/sections/contact-section";
 import EducationSection from "@/sections/education-section";
 import ExperienceSection from "@/sections/experience-section";
+import FaqSection from "@/sections/faq-section";
 import FeaturesSection from "@/sections/features-section";
 import HeroSection from "@/sections/hero-section";
 import PricingSection from "@/sections/pricing-section";
@@ -23,6 +24,7 @@ export default function Page() {
             <EducationSection />
             <PricingSection />
             <TestimonialSection />
+            <FaqSection />
             <ContactSection />
         </main>
     );
