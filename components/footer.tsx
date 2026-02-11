@@ -6,8 +6,6 @@ import {
     GithubIcon,
     InstagramIcon,
     LinkedinIcon,
-    LinkIcon,
-    YoutubeIcon,
     PenToolIcon,
     PinIcon,
     ShoppingBagIcon,
@@ -48,7 +46,7 @@ export default function Footer() {
             }
 
             setSubmitError("Submission failed. Please try again.");
-        } catch (error) {
+        } catch {
             setSubmitError("Submission failed. Please try again.");
         } finally {
             setIsSubmitting(false);
