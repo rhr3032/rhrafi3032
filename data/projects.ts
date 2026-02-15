@@ -2,7 +2,7 @@ import { IProject } from "@/types";
 
 export const projects: IProject[] = [
     {
-        title: "Marketing Agency",
+        title: "Digital Agency",
         description:
             "Designed a modern website for a marketing agency, showcasing services and case studies with an engaging user experience.",
         category: "Marketing Agency",
