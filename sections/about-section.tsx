@@ -50,7 +50,7 @@ export default function AboutSection() {
                             alt="Raisul Hasan Rafi"
                             width={900}
                             height={420}
-                            className="relative z-10 w-full h-105 object-cover rounded-2xl border border-gray-200"
+                            className="relative z-10 w-full h-64 sm:h-80 md:h-96 lg:h-105 object-cover object-top rounded-2xl border border-gray-200"
                         />
                     </AnimatedContent>
                 </div>

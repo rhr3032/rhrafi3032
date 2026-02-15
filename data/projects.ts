@@ -2,111 +2,111 @@ import { IProject } from "@/types";
 
 export const projects: IProject[] = [
     {
-        title: "Pulse Health Portal",
+        title: "Marketing Agency",
         description:
-            "Reimagined patient intake and appointment flows with a reduced step count and clearer consent UX.",
-        category: "Healthcare SaaS",
+            "Designed a modern website for a marketing agency, showcasing services and case studies with an engaging user experience.",
+        category: "Marketing Agency",
         tools: ["Figma", "Maze", "Miro", "Notion"],
         role: "Lead UI/UX Designer",
-        year: "2024",
+        year: "2025",
         thumbnail:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-1.png",
+        href: "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
     },
     {
-        title: "Journey Mobile",
+        title: "Real Estate",
         description:
-            "Designed a travel planner app with offline maps, itinerary builder and in-trip micro-interactions.",
-        category: "Mobile App",
-        tools: ["Figma", "ProtoPie", "Lottie", "After Effects"],
+            "Crafted a sleek web and mobile UI for a real estate platform, enhancing property search and user engagement.",
+        category: "Real Estate",
+        tools: ["Figma", "ProtoPie"],
         role: "UI/UX Designer",
-        year: "2022",
+        year: "2025",
         thumbnail:
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-2.jpg",
+        href: "https://www.behance.net/gallery/182969779/Real-Estate-Website-Web-and-Mobile-UI-Design",
     },
     {
-        title: "Lens Studio",
+        title: "Petition",
         description:
-            "Crafted a high-impact portfolio site with case study storytelling and motion-led transitions.",
-        category: "Brand + Web",
-        tools: ["Figma", "Framer", "Webflow", "GSAP"],
-        role: "Visual Designer",
-        year: "2021",
+            "Designed a responsive landing page for a nonprofit campaign, optimizing for conversions and accessibility.",
+        category: "Nonprofit Organization",
+        tools: ["Figma", "Maze", "Miro", "Notion"],
+        role: "Lead UI/UX Designer",
+        year: "2025",
         thumbnail:
-            "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-3.png",
+        href: "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
     },
     {
-        title: "Harbor Finance",
+        title: "Online Groceries",
         description:
-            "Redesigned analytics dashboards and onboarding to improve activation and reporting clarity.",
-        category: "Fintech",
+            "Created a user-friendly UI for an online grocery app, streamlining the shopping experience with intuitive navigation and personalized features.",
+        category: "E-commerce",
         tools: ["Figma", "Amplitude", "Notion", "Jira"],
         role: "Product Designer",
+        year: "2025",
+        thumbnail:
+            "/assets/projects/demo-4.png",
+        href: "https://www.behance.net/gallery/234089065/Online-Groceries-App-UI-Design",
+    },
+    {
+        title: "RideShare",
+        description:
+            "Designed a comprehensive UI kit for a ridesharing app, focusing on seamless user interactions and a cohesive visual language.",
+        category: "Transportation",
+        tools: ["Figma", "Lottie", "Notion", "Jira"],
+        role: "UX Designer",
         year: "2024",
         thumbnail:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-5.png",
+        href: "https://www.behance.net/gallery/229018819/RideShare-Mobile-App-UI-kit",
     },
     {
-        title: "Northwind Retail",
+        title: "Smart City",
         description:
-            "Built a merchandising UI and inventory flow for faster stock turns and cleaner ops.",
-        category: "Retail Ops",
-        tools: ["Figma", "Miro", "Slack", "Airtable"],
-        role: "UX Designer",
-        year: "2023",
-        thumbnail:
-            "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
-    },
-    {
-        title: "Aurora Travel",
-        description:
-            "Created a trip planning flow with tailored recommendations and smart itinerary views.",
-        category: "Travel",
-        tools: ["Figma", "ProtoPie", "Lottie", "After Effects"],
+            "Crafted a mobile app UI for a smart city initiative, enabling residents to access services and information with ease.",
+        category: "Smart City",
+        tools: ["Figma", "ProtoPie", "Notion", "Miro"],
         role: "UI/UX Designer",
         year: "2022",
         thumbnail:
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-6.png",
+        href: "https://www.behance.net/gallery/180991967/Smart-Patuakhali-Mobile-App-UI-Design",
     },
     {
-        title: "Cobalt HR Suite",
+        title: "Hounter",
         description:
-            "Simplified hiring pipelines with clearer candidate stages and faster review loops.",
-        category: "HR Tech",
+            "Designed a landing page for a recruitment platform, focusing on clear messaging and an engaging user experience to drive sign-ups.",
+        category: "Recruitment Platform",
         tools: ["Figma", "Notion", "Miro", "Jira"],
-        role: "Product Designer",
-        year: "2024",
-        thumbnail:
-            "https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
-    },
-    {
-        title: "Strata Energy",
-        description:
-            "Designed monitoring dashboards for asset health and predictive maintenance insights.",
-        category: "Energy",
-        tools: ["Figma", "FigJam", "Airtable", "Asana"],
         role: "UX Designer",
         year: "2023",
         thumbnail:
-            "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-7.png",
+        href: "https://www.behance.net/gallery/179609607/Hounter-Landing-Page-UI-Design",
     },
     {
-        title: "Canopy Learning",
+        title: "Plant-Shop",
         description:
-            "Built course discovery and progress flows to improve completion and retention.",
-        category: "EdTech",
-        tools: ["Figma", "Lottie", "Notion", "Zoom"],
+            "Designed a responsive landing page for an online plant shop, focusing on user engagement and conversion optimization.",
+        category: "E-commerce",
+        tools: ["Figma", "Lottie", "Notion", "Jira"],
+        role: "UX Designer",
+        year: "2022",
+        thumbnail:
+            "/assets/projects/demo-8.png",
+        href: "https://www.behance.net/gallery/177190447/Plant-Shop-Website-Landing-Page-UI-Design",
+    },
+    {
+        title: "Automobile Shop",
+        description:
+            "Designed a responsive landing page for an automobile shop, focusing on user engagement and conversion optimization.",
+        category: "E-commerce",
+        tools: ["Figma", "Lottie", "Notion", "Jira"],
         role: "UI/UX Designer",
         year: "2022",
         thumbnail:
-            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
-        href: "#contact",
+            "/assets/projects/demo-9.png",
+        href: "https://www.behance.net/gallery/174358181/Automobile-Shop-Website-Landing-Page-UI-Design",
     },
 ];

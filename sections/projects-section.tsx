@@ -42,6 +42,7 @@ export default function ProjectsSection() {
                                     <a
                                         href={project.href}
                                         className="flex items-center gap-1 text-sm text-zinc-500 hover:text-orange-500 whitespace-nowrap"
+                                        target="_blank" rel="noopener noreferrer"
                                     >
                                         View case study
                                         <ArrowUpRightIcon size={16} />
@@ -63,8 +64,9 @@ export default function ProjectsSection() {
                     ))}
                 </div>
                 <a
-                    href="#projects"
+                    href="https://www.behance.net/rhr3032"
                     className="mt-10 inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-orange-50 border border-orange-200 text-sm font-medium text-orange-500"
+                    target="_blank" rel="noopener noreferrer"
                 >
                     View more projects
                 </a>

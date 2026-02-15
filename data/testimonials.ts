@@ -2,27 +2,27 @@ import { ITestimonial } from "@/types";
 
 export const testimonials: ITestimonial[] = [
     {
-        name: "Avery Jordan",
-        handle: "Founder, Fintech",
-        image: "https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=687&auto=format&fit=crop",
+        name: "Afik Sourav",
+        handle: "Software Engineer",
+        image: "/assets/clients/avatar-1.png",
         quote:
-            "Rafi translated messy ideas into clean flows and a design system the team could actually build from.",
+            "Rafi's design work elevated our product to new heights. His attention to detail and user-centric approach made a real difference, resulting in a more engaging and effective user experience for our customers.",
         rating: 5,
     },
     {
-        name: "Taylor Singh",
-        handle: "Product Lead, SaaS",
-        image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=600",
+        name: "Imran Khan",
+        handle: "Architect Engineer",
+        image: "/assets/clients/avatar-2.png",
         quote:
-            "Our usability score jumped after the redesign. The handoff was clear, and the prototype sold the vision.",
+            "Rafi's work on our design system was a game-changer for our team. He brought consistency, efficiency, and a clear vision to our product development process, making collaboration much smoother and more productive.",
         rating: 5,
     },
     {
-        name: "Jordan Rivera",
-        handle: "CEO, HealthTech",
-        image: "https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?q=80&w=735&auto=format&fit=crop",
+        name: "Ayesha Siddique",
+        handle: "Graphic Designer",
+        image: "/assets/clients/avatar-3.png",
         quote:
-            "Every decision had a rationale. We shipped with confidence and the product finally feels premium.",
+            "Rafi's creativity and problem-solving skills were instrumental in the success of our campaign. The landing page he designed exceeded our expectations and helped us reach a wider audience with a strong, clear message.",
         rating: 5,
     },
 ];

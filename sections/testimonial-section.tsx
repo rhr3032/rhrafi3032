@@ -2,6 +2,7 @@ import AnimatedContent from "@/components/animated-content";
 import SectionTitle from "@/components/section-title";
 import { testimonials } from "@/data/testimonials";
 import { ShieldCheckIcon, StarIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function TestimonialSection() {
     return (
@@ -24,7 +25,13 @@ export default function TestimonialSection() {
                                 {testimonial.quote}
                             </p>
                             <div className='flex items-center gap-2 pt-3'>
-                                <img className='size-10 rounded-full object-cover' src={testimonial.image} alt={testimonial.name} />
+                                <Image
+                                    className='size-10 rounded-full object-cover'
+                                    src={testimonial.image}
+                                    alt={testimonial.name}
+                                    width={40}
+                                    height={40}
+                                />
                                 <div>
                                     <p className={`font-medium text-gray-800 ${index === 1 ? 'text-white' : ''}`}>{testimonial.name}</p>
                                     <p className={`text-xs ${index === 1 ? 'text-white' : 'text-zinc-500'}`}>{testimonial.handle}</p>
@@ -33,7 +40,7 @@ export default function TestimonialSection() {
                         </AnimatedContent>
                     ))}
                 </div>
-                <a href="#projects" className="mt-20 px-8 py-2.5 rounded-full bg-orange-50  border border-orange-200 text-orange-500">
+                <a href="https://clutch.co/" className="mt-20 px-8 py-2.5 rounded-full bg-orange-50  border border-orange-200 text-orange-500" target="_blank" rel="noopener noreferrer">
                     View more feedback
                 </a>
             </div>
