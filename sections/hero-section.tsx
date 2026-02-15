@@ -38,7 +38,7 @@ I craft user experiences.`}
                 <WordRevealText
                     as="p"
                     delay={0.05}
-                    text="UI/UX designer focused on product strategy, accessible interfaces and measurable outcomes across web and mobile."
+                    text="As a UI/UX designer focused on product strategy, accessible interfaces and measurable outcomes across web and mobile."
                     className="text-center text-sm/6 sm:text-base/7 text-zinc-500 max-w-2xl mt-3 md:mt-4"
                 />
                 <BlurReveal delay={0.1} className="flex flex-col md:flex-row items-center gap-3 md:gap-4 mt-5 md:mt-6 w-full md:w-auto">
