@@ -21,7 +21,7 @@ export default function FaqSection() {
                     <SectionTitle
                         icon={CircleQuestionMarkIcon}
                         title="Questions, answered"
-                        subtitle="Everything you need to know about working with NUYsDev — process, timelines and deliverables."
+                        subtitle="Everything you need to know about working with me — process, timelines and deliverables."
                     />
                 </div>
             </div>

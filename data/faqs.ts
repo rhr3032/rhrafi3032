@@ -2,28 +2,53 @@ import { IFaq } from "@/types";
 
 export const faqs: IFaq[] = [
     {
-        question: "What does a UI/UX designer handle end to end?",
+        question: "What makes your UI/UX process unique for digital products?",
         answer:
-            "I shape product strategy, user flows, IA, and UI systems, then hand off design-ready specs and prototypes your team can build with confidence.",
+            "My process blends deep user research, rapid prototyping, and pixel-perfect UI design, ensuring every solution is both beautiful and functional. I tailor each project to business goals and user needs, delivering measurable results."
     },
     {
-        question: "How do you approach a new product or redesign?",
+        question: "How do you approach designing for MVPs and startups?",
         answer:
-            "We start with discovery and goals, map critical journeys, prototype fast, and validate with users before polishing the UI and design system.",
+            "I focus on clarity, speed, and scalability—mapping user journeys, creating high-fidelity interfaces, and building a starter design system. This ensures MVPs launch quickly with a strong foundation for growth."
     },
     {
-        question: "Can you work with an existing design system?",
+        question: "Can you audit and improve existing products?",
         answer:
-            "Yes. I can extend your system, document components, and align UX patterns so the product stays consistent across teams.",
+            "Absolutely. I conduct UX audits, identify pain points, and deliver actionable fixes. My audits include user flow analysis, wireframes, and prototypes to help teams optimize their product experience fast."
     },
     {
-        question: "What is the timeline for UX and UI deliverables?",
+        question: "How do you ensure design consistency across teams?",
         answer:
-            "Most engagements run 3-6 weeks, depending on scope. You get weekly milestones like wireframes, prototypes, and final UI specs.",
+            "I document and extend design systems, align UX patterns, and provide clear guidelines. This keeps products visually consistent and easy to scale, even as teams grow or projects expand."
     },
     {
-        question: "What do you deliver at the end?",
+        question: "What deliverables can clients expect from you?",
         answer:
-            "You receive a clickable prototype, final UI screens, component guidelines, and a handoff package with tokens and annotations.",
+            "Clients receive clickable prototypes, annotated UI screens, component libraries, and a handoff package with design tokens and documentation for seamless developer integration."
+    },
+    {
+        question: "How do you collaborate with development teams?",
+        answer:
+            "I work closely with engineers, providing detailed specs, prototypes, and ongoing support. My approach ensures designs are implemented accurately and efficiently, reducing friction and speeding up delivery."
+    },
+    {
+        question: "What’s included in your UX Audit Sprint?",
+        answer:
+            "The UX Audit Sprint includes a discovery workshop, expert review, prioritized fixes, user flows, wireframes, and a clickable prototype—all delivered within 1-2 weeks."
+    },
+    {
+        question: "How do you support ongoing product teams as a retainer?",
+        answer:
+            "With a design retainer, I provide weekly design delivery, regular UX audits, design system maintenance, strategy sessions, and priority support for continuous improvement."
+    },
+    {
+        question: "Do you offer UI/UX and development for larger teams or agencies?",
+        answer:
+            "Yes, I partner with expert developers to deliver UI/UX and development for multi-project teams, including roadmap planning and weekly reporting for enterprise clients."
+    },
+    {
+        question: "How do you ensure your designs are ready for development?",
+        answer:
+            "I provide fully annotated screens, component guidelines, and interactive prototypes, making the handoff to developers seamless and reducing implementation errors."
     },
 ];

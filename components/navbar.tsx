@@ -72,7 +72,7 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto flex items-center justify-center">
                     <div className="nav-bar flex items-center justify-between w-full md:w-auto gap-3 md:gap-4 text-[#1E2939]">
                         <Link href="#!" className="flex items-center">
-                            <Image src="/assets/logo.svg" alt="NUYsDev Logo" width={76} height={76} />
+                            <Image src="/assets/logo.svg" alt="Raisul Rafi Logo" width={76} height={76} />
                         </Link>
 
                         <div className="hidden md:flex items-center gap-2">
@@ -92,7 +92,12 @@ export default function Navbar() {
                             ))}
                         </div>
 
-                        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <button
+                            className="md:hidden"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            title="Open menu"
+                            aria-label="Open menu"
+                        >
                             <MenuIcon className="size-6" />
                         </button>
 
@@ -104,7 +109,7 @@ export default function Navbar() {
             </motion.nav>
             <div className={`fixed top-0 right-0 z-60 w-full bg-white shadow-xl shadow-black/5 transition-all duration-300 ease-in-out ${isMenuOpen ? "h-92 overflow-hidden" : "h-0 overflow-hidden"}`}>
                 <div className="flex items-center justify-between p-4">
-                    <Image src="/assets/logo.svg" alt="NUYsDev Logo" width={135} height={36} />
+                    <Image src="/assets/logo.svg" alt="Raisul Rafi Logo" width={135} height={36} />
                     <XIcon className="size-6.5" onClick={() => setIsMenuOpen(false)} />
                 </div>
                 <div className="flex flex-col gap-4 p-4 text-base">
