@@ -2,7 +2,7 @@ import { IProject } from "@/types";
 
 export const projects: IProject[] = [
     {
-        title: "Digital Agency",
+        title: "Agencysta",
         description:
             "Designed a modern website for a marketing agency, showcasing services and case studies with an engaging user experience.",
         category: "Marketing Agency",
@@ -14,7 +14,7 @@ export const projects: IProject[] = [
         href: "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
     },
     {
-        title: "Real Estate",
+        title: "ReVilla",
         description:
             "Crafted a sleek web and mobile UI for a real estate platform, enhancing property search and user engagement.",
         category: "Real Estate",
@@ -26,7 +26,7 @@ export const projects: IProject[] = [
         href: "https://www.behance.net/gallery/182969779/Real-Estate-Website-Web-and-Mobile-UI-Design",
     },
     {
-        title: "Petition",
+        title: "Petitions",
         description:
             "Designed a responsive landing page for a nonprofit campaign, optimizing for conversions and accessibility.",
         category: "Nonprofit Organization",
@@ -38,7 +38,7 @@ export const projects: IProject[] = [
         href: "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
     },
     {
-        title: "Online Groceries",
+        title: "TopShop",
         description:
             "Created a user-friendly UI for an online grocery app, streamlining the shopping experience with intuitive navigation and personalized features.",
         category: "E-commerce",
@@ -86,7 +86,7 @@ export const projects: IProject[] = [
         href: "https://www.behance.net/gallery/179609607/Hounter-Landing-Page-UI-Design",
     },
     {
-        title: "Plant-Shop",
+        title: "Plant Shop",
         description:
             "Designed a responsive landing page for an online plant shop, focusing on user engagement and conversion optimization.",
         category: "E-commerce",
