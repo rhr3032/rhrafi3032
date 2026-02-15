@@ -10,7 +10,7 @@ export default function ThankYouPage() {
                 </p>
                 <Link
                     href="/"
-                    className="inline-flex mt-6 px-6 py-2.5 rounded-full bg-linear-to-tl from-orange-700 to-orange-600 text-white text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-700"
+                    className="inline-flex mt-6 px-6 py-2.5 rounded-full bg-linear-to-tl from-orange-600 to-orange-500 text-white text-sm"
                 >
                     Back to home
                 </Link>
