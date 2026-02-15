@@ -35,13 +35,13 @@ I craft user experiences.`}
                         <CustomIcon icon={FigmaIcon} dir="right" />
                     </div>
                 </div>
-                <WordRevealText
-                    as="p"
-                    delay={0.05}
                     text="As a UI/UX designer focused on product strategy, accessible interfaces and measurable outcomes across web and mobile."
-                    className="text-center text-sm/6 sm:text-base/7 text-zinc-500 max-w-2xl mt-3 md:mt-4"
-                />
+                    <WordRevealText
+                        as="h2"
+                        text={`I don't just build screens,
                 <BlurReveal delay={0.1} className="flex flex-col md:flex-row items-center gap-3 md:gap-4 mt-5 md:mt-6 w-full md:w-auto">
+                        className="text-center font-urbanist text-3xl/11 sm:text-4xl/12 md:text-6xl/18 mt-4 font-bold max-w-3xl"
+                    />
                     <a
                         href="/resume.pdf"
                         download
