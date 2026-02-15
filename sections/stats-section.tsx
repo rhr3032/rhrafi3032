@@ -13,16 +13,16 @@ export default function StatsSection() {
 
                 <div className="flex flex-col items-center gap-4 text-center">
                     <h3 className="text-4xl font-semibold font-urbanist">
-                        <CountUp from={0} to={32} />+
+                        <CountUp from={0} to={320} />+
                     </h3>
                     <p className="text-gray-500">Projects shipped with cross-functional teams</p>
                 </div>
 
                 <div className="flex flex-col items-center gap-4 text-center">
                     <h3 className="text-4xl font-semibold font-urbanist">
-                        <CountUp from={0} to={12} />+
+                        <CountUp from={0} to={95} />%
                     </h3>
-                    <p className="text-gray-500">Industries supported from fintech to health</p>
+                    <p className="text-gray-500">Client satisfaction rate</p>
                 </div>
             </div>
         </section>
