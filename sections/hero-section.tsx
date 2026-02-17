@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <section className="bg-[url('/assets/hero-gradient-bg.png')] bg-cover bg-center bg-no-repeat px-4 md:px-16 lg:px-24 xl:px-32">
-            <div className="max-w-7xl mx-auto flex flex-col items-center justify-center h-screen">
+            <div className="max-w-(--max-content-width) mx-auto flex flex-col items-center justify-center h-screen">
                 <AnimatedContent reverse distance={30} className="flex items-center gap-1.5 bg-white/50 backdrop-blur p-1 rounded-full text-[11px] md:text-sm">
                     <div className="flex items-center justify-center size-7 rounded-full border-2 border-white bg-white/80 text-orange-600">
                         <UserRoundIcon className="size-4" />
